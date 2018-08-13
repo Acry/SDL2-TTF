@@ -29,7 +29,7 @@ TTF_Font  *font;
 font=TTF_OpenFont("assets/fonts/brick.ttf", 300);
 SDL_Window   *window = SDL_CreateWindow("Outline and Mirror", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1400, 600, 0);
 
-//BEGIN ICON
+//BEGIN ICON./
 SDL_Surface *icon;
 icon = SDL_LoadBMP("assets/gfx/SDL2.bmp");
 SDL_SetWindowIcon(window, icon);
