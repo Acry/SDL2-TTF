@@ -83,7 +83,7 @@ init();
 assets_in();
 
 //BEGIN WINDOW
-SDL_SetWindowPosition(Window,0,0);
+SDL_SetWindowPosition(Window,SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED);
 SDL_SetWindowSize(Window,ww,wh);
 SDL_SetWindowTitle(Window, "SDL_ttf 2.0");
 SDL_ShowWindow(Window);
@@ -168,7 +168,7 @@ void assets_in(void)
 	temp_surface=TTF_RenderText_Blended(font,"TTF_RenderText_Blended",color);
 	link2_tp= SDL_CreateTextureFromSurface(Renderer, temp_surface);
 	SDL_QueryTexture(link2_tp, NULL, NULL, &link2_tp_dst.w, &link2_tp_dst.h);
-	link2_tp_dst.x= ww/2-link2_tp_dst.w/2;;
+	link2_tp_dst.x= ww/2-link2_tp_dst.w/2;
 	link2_tp_dst.y= 170;
 	//END 	Blended
 	

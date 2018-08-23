@@ -7,7 +7,7 @@ void init(void)
 
 SDL_Init(SDL_INIT_EVERYTHING);
 TTF_Init();
-Window = SDL_CreateWindow("", 0, 0, 0, 0, SDL_WINDOW_HIDDEN);
+Window = SDL_CreateWindow("",SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 0, 0, SDL_WINDOW_HIDDEN);
 
 //BEGIN ICON
 SDL_Surface *icon;
